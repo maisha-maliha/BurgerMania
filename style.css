@@ -6,6 +6,10 @@ font-family: "Abril Fatface",
 cursive;
 Light 300 Bold 700 Black 900
 */
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	overflow-x: hidden;
 }
