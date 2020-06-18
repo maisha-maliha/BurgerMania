@@ -13,6 +13,7 @@ const para = document.querySelectorAll('.para')
 const cont = document.querySelector('#contact')
 const foodi = document.querySelector('#order')
 const food = document.querySelectorAll('.food-item')
+const btn = document.querySelector('button')
 window.addEventListener('scroll', scrolling)
 console.log(food)
 
@@ -25,9 +26,9 @@ function scrolling() {
     for (let i = 0; i < food.length; i++) {
       food[i].style = 'opacity:1'
       if (i % 2 == 0) {
-        food[i].className = 'food-item animate__animated animate__fadeInRight'
-      } else {
         food[i].className = 'food-item animate__animated animate__fadeInLeft'
+      } else {
+        food[i].className = 'food-item animate__animated animate__fadeInRight'
       }
     }
   }
@@ -46,6 +47,7 @@ function scrolling() {
     for (let i = 1; i < input.length; i++) {
       input[i].className = 'animate__animated animate__bounceIn'
     }
+    btn.style = '	animation-name: come;animation-duration: 1s;animation-delay:1s'
     h2[1].className = 'res-title animate__animated animate__backInDown'
     h2[1].style = 'opacity:1'
     h2[2].style = 'opacity:1'
